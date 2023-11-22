@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <label>
+      <input
+        type="radio"
+        name="filter"
+        value="all"
+        onclick="main(this.value)"
+        checked
+      />
+      全キャラクター
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="filter"
+        value="kisatsutai"
+        onclick="main(this.value)"
+      />
+      鬼殺隊
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="filter"
+        value="hashira"
+        onclick="main(this.value)"
+      />
+      柱
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="filter"
+        value="oni"
+        onclick="main(this.value)"
+      />
+      鬼
+    </label>
+
+    <div id="loading" style="display: none">ローディング中...</div>
+    <div id="result"></div>
+  </body>
+</html>
